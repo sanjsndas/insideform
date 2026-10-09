@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Categories — Form Matters Journal</title>
+  <meta name="description" content="Browse all topics and categories on Form Matters — interior design, architecture, materials, lighting, small spaces, and modern living.">
+  <meta name="author" content="Form Matters Editorial">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.formmatters-journal.com/categories.html">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Categories — Form Matters Journal">
+  <meta property="og:description" content="Browse all topics and categories on Form Matters — interior design, architecture, materials, lighting, and more.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.formmatters-journal.com/categories.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=630&fit=crop&auto=format">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Categories",
+    "url": "https://www.formmatters-journal.com/categories.html",
+    "description": "Browse all topics and categories on Form Matters — interior design, architecture, materials, lighting, small spaces, and modern living.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Form Matters Editorial",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.formmatters-journal.com/logo.png"
+      }
+    }
+  }
+  </script>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+  <style>
+    /* ---------- RESET & VARIABLES ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg: #f9f8f6;
+      --surface: #ffffff;
+      --text-primary: #1e1e1e;
+      --text-secondary: #3f3f3f;
+      --text-tertiary: #6b6b6b;
+      --border: #e0ddd8;
+      --accent: #8b6b4d;
+      --accent-light: #f0ebe4;
+      --serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
+      --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.04);
+      --shadow-md: 0 4px 12px rgba(0,0,0,0.05);
+      --shadow-lg: 0 8px 24px rgba(0,0,0,0.08);
+      --radius: 4px;
+      --max-width: 1280px;
+      --content-width: 800px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text-primary);
+      font-family: var(--sans);
+      font-size: 1rem;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button, input {
+      font-family: inherit;
+      font-size: inherit;
+    }
+
+    /* ---------- TYPOGRAPHY ---------- */
+    h1, h2, h3, h4 {
+      font-family: var(--serif);
+      font-weight: 500;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+    }
+
+    h2 {
+      font-size: 1.9rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h3 {
+      font-size: 1.35rem;
+      margin-bottom: 0.25rem;
+    }
+
+    h4 {
+      font-size: 1.15rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .meta {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-tertiary);
+      font-weight: 500;
+    }
+
+    .category-tag {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      background: var(--accent-light);
+      padding: 0.2rem 0.6rem;
+      border-radius: 2px;
+      margin-bottom: 0.5rem;
+    }
+
+    /* ---------- LAYOUT ---------- */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .site-header {
+      border-bottom: 1px solid var(--border);
+      background: var(--surface);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 1.5rem;
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+
+    .logo {
+      font-family: var(--serif);
+      font-size: 1.6rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+
+    .logo span {
+      color: var(--accent);
+      font-style: italic;
+      font-weight: 400;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.75rem;
+      list-style: none;
+      font-size: 0.85rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .nav-links a {
+      color: var(--text-secondary);
+      transition: color 0.15s;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
+    }
+
+    .nav-links a.active {
+      color: var(--accent);
+      border-bottom: 1px solid var(--accent);
+      padding-bottom: 0.2rem;
+    }
+
+    .search-bar {
+      display: flex;
+      align-items: center;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 0.4rem 0.75rem;
+      background: var(--bg);
+      transition: border-color 0.15s;
+    }
+
+    .search-bar:focus-within {
+      border-color: var(--accent);
+    }
+
+    .search-bar input {
+      border: none;
+      background: transparent;
+      outline: none;
+      font-size: 0.85rem;
+      width: 140px;
+      color: var(--text-primary);
+    }
+
+    .search-bar input::placeholder {
+      color: var(--text-tertiary);
+    }
+
+    .search-icon {
+      font-size: 0.9rem;
+      color: var(--text-tertiary);
+      margin-right: 0.4rem;
+    }
+
+    .mobile-menu-btn {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: var(--text-primary);
+    }
+
+    /* ---------- CATEGORIES PAGE CONTENT ---------- */
+    .categories-content {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 2.5rem 0 4rem;
+    }
+
+    .categories-hero {
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .categories-hero h1 {
+      font-size: 2.6rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .categories-hero .lead {
+      font-size: 1.15rem;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      max-width: 700px;
+    }
+
+    .categories-intro {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      margin-top: 1.5rem;
+    }
+
+    .filter-btn {
+      background: transparent;
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      padding: 0.45rem 1.1rem;
+      font-size: 0.8rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--text-secondary);
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+
+    .filter-btn:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .filter-btn.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+    }
+
+    /* ---------- CATEGORIES GRID ---------- */
+    .categories-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.75rem;
+    }
+
+    .category-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      transition: box-shadow 0.2s, transform 0.2s;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .category-card:hover {
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+
+    .category-card-image {
+      aspect-ratio: 16 / 9;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      display: flex;
+      align-items: flex-end;
+      padding: 1rem;
+    }
+
+    .category-card-image::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0) 60%);
+    }
+
+    .category-card-image .category-tag {
+      position: relative;
+      z-index: 1;
+      margin-bottom: 0;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(4px);
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .category-card-body {
+      padding: 1.5rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .category-card-body h3 {
+      font-size: 1.35rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .category-card-body p {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      line-height: 1.65;
+      margin-bottom: 1rem;
+      flex: 1;
+    }
+
+    .category-card-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.78rem;
+      color: var(--text-tertiary);
+      border-top: 1px solid var(--border);
+      padding-top: 1rem;
+      margin-top: auto;
+    }
+
+    .category-card-meta .article-count {
+      font-weight: 500;
+      color: var(--text-secondary);
+    }
+
+    .category-card-meta .arrow {
+      transition: transform 0.2s;
+    }
+
+    .category-card:hover .category-card-meta .arrow {
+      transform: translateX(4px);
+    }
+
+    /* ---------- FEATURED CATEGORY ---------- */
+    .featured-category {
+      margin-top: 3.5rem;
+    }
+
+    .featured-category-header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .featured-category-header h2 {
+      font-size: 1.6rem;
+      margin-bottom: 0;
+    }
+
+    .featured-category-header a {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      font-weight: 600;
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .featured-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 1.75rem;
+    }
+
+    .featured-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+      transition: box-shadow 0.2s, transform 0.2s;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .featured-item:hover {
+      box-shadow: var(--shadow-md);
+      transform: translateY(-2px);
+    }
+
+    .featured-item-image {
+      aspect-ratio: 16 / 9;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    .featured-item-image::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0) 50%);
+    }
+
+    .featured-item-body {
+      padding: 1.25rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .featured-item-body h4 {
+      font-size: 1.15rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .featured-item-body p {
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+      line-height: 1.6;
+      margin-bottom: 0.75rem;
+      flex: 1;
+    }
+
+    .featured-item-body .meta {
+      font-size: 0.72rem;
+    }
+
+    /* ---------- FOOTER ---------- */
+    .site-footer {
+      border-top: 1px solid var(--border);
+      background: var(--surface);
+      padding: 3rem 0 2rem;
+      margin-top: 2rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .footer-brand h3 {
+      font-family: var(--serif);
+      font-size: 1.4rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .footer-brand p {
+      font-size: 0.85rem;
+      color: var(--text-tertiary);
+      line-height: 1.6;
+      max-width: 280px;
+    }
+
+    .footer-col h4 {
+      font-family: var(--sans);
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-tertiary);
+      margin-bottom: 1rem;
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col li {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-col a {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      transition: color 0.15s;
+    }
+
+    .footer-col a:hover {
+      color: var(--accent);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid var(--border);
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.78rem;
+      color: var(--text-tertiary);
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .footer-bottom a {
+      color: var(--text-tertiary);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 1024px) {
+      .categories-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .featured-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .header-inner {
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+
+      .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        gap: 0.75rem;
+        padding-top: 1rem;
+        border-top: 1px solid var(--border);
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .mobile-menu-btn {
+        display: block;
+      }
+
+      .search-bar {
+        order: 3;
+        width: 100%;
+      }
+
+      .search-bar input {
+        width: 100%;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .categories-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .featured-grid {
+        grid-template-columns: 1fr;
+      }
+
+      h1 { font-size: 1.9rem; }
+      h2 { font-size: 1.5rem; }
+      .categories-hero h1 { font-size: 2rem; }
+      .categories-hero .lead { font-size: 1rem; }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 0 1rem;
+      }
+
+      .header-inner {
+        padding: 0.75rem 1rem;
+      }
+
+      .categories-content {
+        padding: 1.5rem 0 2.5rem;
+      }
+
+      .filter-btn {
+        font-size: 0.72rem;
+        padding: 0.35rem 0.85rem;
+      }
+    }
+
+    /* ---------- UTILITY ---------- */
+    .hidden {
+      display: none !important;
+    }
+
+    .no-results {
+      text-align: center;
+      padding: 3rem 1rem;
+      color: var(--text-tertiary);
+      font-size: 1.1rem;
+      grid-column: 1 / -1;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="Form Matters home"> Inside Form<span>Matters</span></a>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">☰</button>
+
+      <nav aria-label="Main navigation">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="terms.html">Terms Of Privacy</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="cookies.html">Cookies Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="categories.html" class="active">Categories</a></li>
+        </ul>
+      </nav>
+
+      <div class="search-bar">
+        <span class="search-icon" aria-hidden="true">⌕</span>
+        <input type="search" id="searchInput" placeholder="Search articles…" aria-label="Search articles">
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== MAIN ========== -->
+  <div class="container">
+    <div class="categories-content">
+
+      <!-- HERO -->
+      <section class="categories-hero">
+        <span class="category-tag" style="margin-bottom:0.75rem;">Explore</span>
+        <h1>Categories</h1>
+        <p class="lead">Browse our editorial sections. From interior design and architecture to materials, lighting, and small spaces — every article is crafted with care for the built environment.</p>
+        <div class="categories-intro">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="interior">Interior Design</button>
+          <button class="filter-btn" data-filter="architecture">Architecture</button>
+          <button class="filter-btn" data-filter="materials">Materials</button>
+          <button class="filter-btn" data-filter="lighting">Lighting</button>
+          <button class="filter-btn" data-filter="small-spaces">Small Spaces</button>
+          <button class="filter-btn" data-filter="modern-living">Modern Living</button>
+        </div>
+      </section>
+
+      <!-- CATEGORIES GRID -->
+      <div class="categories-grid" id="categoriesGrid">
+
+        <!-- Interior Design -->
+        <a href="#" class="category-card" data-category="interior">
+          <div class="category-card-image" style="background-image: url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&h=340&fit=crop&auto=format');">
+            <span class="category-tag">Interior Design</span>
+          </div>
+          <div class="category-card-body">
+            <h3>Interior Design</h3>
+            <p>Thoughtful interiors, spatial planning, colour theory, furniture selection, and the art of making rooms feel like home.</p>
+            <div class="category-card-meta">
+              <span class="article-count">24 articles</span>
+              <span class="arrow">→</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Architecture -->
+        <a href="#" class="category-card" data-category="architecture">
+          <div class="category-card-image" style="background-image: url('https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=600&h=340&fit=crop&auto=format');">
+            <span class="category-tag">Architecture</span>
+          </div>
+          <div class="category-card-body">
+            <h3>Architecture</h3>
+            <p>Buildings, urbanism, adaptive reuse, and the dialogue between structure, context, and the people who inhabit them.</p>
+            <div class="category-card-meta">
+              <span class="article-count">18 articles</span>
+              <span class="arrow">→</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Materials -->
+        <a href="#" class="category-card" data-category="materials">
+          <div class="category-card-image" style="background-image: url('https://images.unsplash.com/photo-1519710164239-da123dc03ef4?w=600&h=340&fit=crop&auto=format');">
+            <span class="category-tag">Materials</span>
+          </div>
+          <div class="category-card-body">
+            <h3>Materials</h3>
+            <p>Stone, timber, concrete, glass, and textiles — how material choices shape atmosphere, durability, and sustainability.</p>
+            <div class="category-card-meta">
+              <span class="article-count">15 articles</span>
+              <span class="arrow">→</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Lighting -->
+        <a href="#" class="category-card" data-category="lighting">
+          <div class="category-card-image" style="background-image: url('https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?w=600&h=340&fit=crop&auto=format');">
+            <span class="category-tag">Lighting</span>
+          </div>
+          <div class="category-card-body">
+            <h3>Lighting</h3>
+            <p>Natural and artificial light, fixtures, layering, and the subtle craft of illuminating spaces without overwhelming them.</p>
+            <div class="category-card-meta">
+              <span class="article-count">12 articles</span>
+              <span class="arrow">→</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Small Spaces -->
+        <a href="#" class="category-card" data-category="small-spaces">
+          <div class="category-card-image" style="background-image: url('https://images.unsplash.com/photo-1554995207-c18c203602cb?w=600&h=340&fit=crop&auto=format');">
+            <span class="category-tag">Small Spaces</span>
+          </div>
+          <div class="category-card-body">
+            <h3>Small Spaces</h3>
+            <p>Compact living, clever storage, micro-apartments, and design strategies that make every square metre count.</p>
+            <div class="category-card-meta">
+              <span class="article-count">20 articles</span>
+              <span class="arrow">→</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Modern Living -->
+        <a href="#" class="category-card" data-category="modern-living">
+          <div class="category-card-image" style="background-image: url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=600&h=340&fit=crop&auto=format');">
+            <span class="category-tag">Modern Living</span>
+          </div>
+          <div class="category-card-body">
+            <h3>Modern Living</h3>
+            <p>Contemporary lifestyles, smart homes, wellness-oriented design, and the evolving rituals of domestic life.</p>
+            <div class="category-card-meta">
+              <span class="article-count">16 articles</span>
+              <span class="arrow">→</span>
+            </div>
+          </div>
+        </a>
+
+      </div>
+
+      <!-- FEATURED CATEGORY -->
+      <section class="featured-category">
+        <div class="featured-category-header">
+          <h2>Featured in Interior Design</h2>
+          <a href="#">View all →</a>
+        </div>
+        <div class="featured-grid">
+          <a href="#" class="featured-item">
+            <div class="featured-item-image" style="background-image: url('https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=600&h=340&fit=crop&auto=format');"></div>
+            <div class="featured-item-body">
+              <h4>The Quiet Power of Neutral Palettes</h4>
+              <p>Why less colour can mean more warmth — and how to layer tone, texture, and light in a restrained interior.</p>
+              <span class="meta">March 12, 2025 · 8 min read</span>
+            </div>
+          </a>
+          <a href="#" class="featured-item">
+            <div class="featured-item-image" style="background-image: url('https://images.unsplash.com/photo-1615874959474-d609969a20ed?w=600&h=340&fit=crop&auto=format');"></div>
+            <div class="featured-item-body">
+              <h4>Furniture as Architecture</h4>
+              <p>Built-in seating, bespoke joinery, and the blurring line between object and room.</p>
+              <span class="meta">March 8, 2025 · 6 min read</span>
+            </div>
+          </a>
+          <a href="#" class="featured-item">
+            <div class="featured-item-image" style="background-image: url('https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=600&h=340&fit=crop&auto=format');"></div>
+            <div class="featured-item-body">
+              <h4>Texture Over Colour</h4>
+              <p>A case for tactile surfaces — bouclé, lime plaster, raw linen — in contemporary interiors.</p>
+              <span class="meta">March 5, 2025 · 5 min read</span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>Form Matters</h3>
+          <p>An independent journal of interior design and architecture. We publish long-form articles, practical guides, and critical perspectives on the built environment.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Interior Design</a></li>
+            <li><a href="index.html">Architecture</a></li>
+            <li><a href="index.html">Materials</a></li>
+            <li><a href="index.html">Lighting</a></li>
+            <li><a href="index.html">Small Spaces</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="about.html">Our Mission</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">Editorial Guidelines</a></li>
+            <li><a href="about.html">Contributors</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="cookies.html">Cookie Policy</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2025 Form Matters Editorial. All rights reserved.</span>
+        <span>Made with care for the built environment.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== JAVASCRIPT ========== -->
+  <script>
+    (function() {
+      'use strict';
+
+      // Mobile menu toggle
+      const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+      const navLinks = document.getElementById('navLinks');
+      if (mobileMenuBtn && navLinks) {
+        mobileMenuBtn.addEventListener('click', () => {
+          navLinks.classList.toggle('active');
+        });
+      }
+
+      // Search filtering (placeholder — redirects to home with search)
+      const searchInput = document.getElementById('searchInput');
+      if (searchInput) {
+        searchInput.addEventListener('keydown', function(e) {
+          if (e.key === 'Enter') {
+            e.preventDefault();
+            const query = this.value.trim();
+            if (query) {
+              window.location.href = 'index.html?search=' + encodeURIComponent(query);
+            }
+          }
+        });
+      }
+
+      // Category filtering
+      const filterButtons = document.querySelectorAll('.filter-btn');
+      const categoryCards = document.querySelectorAll('.category-card');
+      const grid = document.getElementById('categoriesGrid');
+
+      // Create no-results element (hidden by default)
+      const noResults = document.createElement('div');
+      noResults.className = 'no-results hidden';
+      noResults.textContent = 'No categories match this filter.';
+      grid.appendChild(noResults);
+
+      filterButtons.forEach(btn => {
+        btn.addEventListener('click', function() {
+          // Update active button
+          filterButtons.forEach(b => b.classList.remove('active'));
+          this.classList.add('active');
+
+          const filter = this.dataset.filter;
+          let visibleCount = 0;
+
+          categoryCards.forEach(card => {
+            if (filter === 'all' || card.dataset.category === filter) {
+              card.classList.remove('hidden');
+              visibleCount++;
+            } else {
+              card.classList.add('hidden');
+            }
+          });
+
+          // Show/hide no-results message
+          if (visibleCount === 0) {
+            noResults.classList.remove('hidden');
+          } else {
+            noResults.classList.add('hidden');
+          }
+        });
+      });
+
+      // Smooth scroll for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          const href = this.getAttribute('href');
+          if (href === '#') return;
+          const target = document.querySelector(href);
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      });
+
+    })();
+  </script>
+
+</body>
+</html>

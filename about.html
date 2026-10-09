@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Form Matters Journal</title>
+  <meta name="description" content="About Form Matters — an independent editorial publication exploring interior design, architecture, materials, and modern living. Our mission, editorial team, and values.">
+  <meta name="author" content="Form Matters Editorial">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.formmatters-journal.com/about.html">
+  <!-- Open Graph -->
+  <meta property="og:title" content="About — Form Matters Journal">
+  <meta property="og:description" content="Independent editorial on interior design, architecture, materials, and modern living. Learn about our mission and team.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.formmatters-journal.com/about.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=630&fit=crop&auto=format">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "name": "About Form Matters",
+    "url": "https://www.formmatters-journal.com/about.html",
+    "description": "About Form Matters — independent editorial publication on interior design, architecture, and modern living.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Form Matters Editorial",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.formmatters-journal.com/logo.png"
+      }
+    }
+  }
+  </script>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+  <style>
+    /* ---------- RESET & VARIABLES ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg: #f9f8f6;
+      --surface: #ffffff;
+      --text-primary: #1e1e1e;
+      --text-secondary: #3f3f3f;
+      --text-tertiary: #6b6b6b;
+      --border: #e0ddd8;
+      --accent: #8b6b4d;
+      --accent-light: #f0ebe4;
+      --serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
+      --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.04);
+      --shadow-md: 0 4px 12px rgba(0,0,0,0.05);
+      --radius: 4px;
+      --max-width: 1280px;
+      --content-width: 800px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text-primary);
+      font-family: var(--sans);
+      font-size: 1rem;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button, input {
+      font-family: inherit;
+      font-size: inherit;
+    }
+
+    /* ---------- TYPOGRAPHY ---------- */
+    h1, h2, h3, h4 {
+      font-family: var(--serif);
+      font-weight: 500;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+    }
+
+    h2 {
+      font-size: 1.9rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h3 {
+      font-size: 1.35rem;
+      margin-bottom: 0.25rem;
+    }
+
+    h4 {
+      font-size: 1.15rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .meta {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-tertiary);
+      font-weight: 500;
+    }
+
+    .category-tag {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      background: var(--accent-light);
+      padding: 0.2rem 0.6rem;
+      border-radius: 2px;
+      margin-bottom: 0.5rem;
+    }
+
+    /* ---------- LAYOUT ---------- */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .site-header {
+      border-bottom: 1px solid var(--border);
+      background: var(--surface);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 1.5rem;
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+
+    .logo {
+      font-family: var(--serif);
+      font-size: 1.6rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+
+    .logo span {
+      color: var(--accent);
+      font-style: italic;
+      font-weight: 400;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.75rem;
+      list-style: none;
+      font-size: 0.85rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .nav-links a {
+      color: var(--text-secondary);
+      transition: color 0.15s;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
+    }
+
+    .nav-links a.active {
+      color: var(--accent);
+      border-bottom: 1px solid var(--accent);
+      padding-bottom: 0.2rem;
+    }
+
+    .search-bar {
+      display: flex;
+      align-items: center;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 0.4rem 0.75rem;
+      background: var(--bg);
+      transition: border-color 0.15s;
+    }
+
+    .search-bar:focus-within {
+      border-color: var(--accent);
+    }
+
+    .search-bar input {
+      border: none;
+      background: transparent;
+      outline: none;
+      font-size: 0.85rem;
+      width: 140px;
+      color: var(--text-primary);
+    }
+
+    .search-bar input::placeholder {
+      color: var(--text-tertiary);
+    }
+
+    .search-icon {
+      font-size: 0.9rem;
+      color: var(--text-tertiary);
+      margin-right: 0.4rem;
+    }
+
+    .mobile-menu-btn {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: var(--text-primary);
+    }
+
+    /* ---------- ABOUT PAGE CONTENT ---------- */
+    .about-content {
+      max-width: var(--content-width);
+      margin: 0 auto;
+      padding: 2.5rem 0 4rem;
+    }
+
+    .about-hero {
+      margin-bottom: 3rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .about-hero h1 {
+      font-size: 2.6rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .about-hero .lead {
+      font-size: 1.15rem;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      max-width: 700px;
+    }
+
+    .about-section {
+      margin-bottom: 3rem;
+    }
+
+    .about-section h2 {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .about-section p {
+      color: var(--text-secondary);
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      line-height: 1.75;
+    }
+
+    .about-section p:last-child {
+      margin-bottom: 0;
+    }
+
+    .values-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .value-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      transition: box-shadow 0.15s;
+    }
+
+    .value-card:hover {
+      box-shadow: var(--shadow-sm);
+    }
+
+    .value-card h3 {
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+      font-family: var(--serif);
+    }
+
+    .value-card p {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      margin-bottom: 0;
+    }
+
+    .value-icon {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      display: block;
+      color: var(--accent);
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .team-member {
+      display: flex;
+      gap: 1.25rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+      transition: box-shadow 0.15s;
+    }
+
+    .team-member:hover {
+      box-shadow: var(--shadow-sm);
+    }
+
+    .team-avatar {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: var(--accent-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--accent);
+      flex-shrink: 0;
+      font-family: var(--serif);
+    }
+
+    .team-member h4 {
+      font-size: 1rem;
+      margin-bottom: 0.1rem;
+      font-family: var(--sans);
+      font-weight: 600;
+    }
+
+    .team-member .role {
+      font-size: 0.78rem;
+      color: var(--accent);
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 0.4rem;
+    }
+
+    .team-member p {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+      margin-bottom: 0;
+    }
+
+    .editorial-standards {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.75rem;
+      margin-top: 1.5rem;
+    }
+
+    .editorial-standards ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 1rem;
+    }
+
+    .editorial-standards li {
+      padding: 0.6rem 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.92rem;
+      color: var(--text-secondary);
+      display: flex;
+      gap: 0.75rem;
+      align-items: flex-start;
+    }
+
+    .editorial-standards li:last-child {
+      border-bottom: none;
+    }
+
+    .editorial-standards .check {
+      color: var(--accent);
+      font-weight: 600;
+      flex-shrink: 0;
+    }
+
+    .contact-block {
+      background: var(--accent-light);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.75rem;
+      margin-top: 1.5rem;
+    }
+
+    .contact-block h3 {
+      font-family: var(--serif);
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .contact-block p {
+      font-size: 0.92rem;
+      color: var(--text-secondary);
+      margin-bottom: 0.75rem;
+    }
+
+    .contact-block a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      font-weight: 500;
+    }
+
+    /* ---------- FOOTER ---------- */
+    .site-footer {
+      border-top: 1px solid var(--border);
+      background: var(--surface);
+      padding: 3rem 0 2rem;
+      margin-top: 2rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .footer-brand h3 {
+      font-family: var(--serif);
+      font-size: 1.4rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .footer-brand p {
+      font-size: 0.85rem;
+      color: var(--text-tertiary);
+      line-height: 1.6;
+      max-width: 280px;
+    }
+
+    .footer-col h4 {
+      font-family: var(--sans);
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-tertiary);
+      margin-bottom: 1rem;
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col li {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-col a {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      transition: color 0.15s;
+    }
+
+    .footer-col a:hover {
+      color: var(--accent);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid var(--border);
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.78rem;
+      color: var(--text-tertiary);
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .footer-bottom a {
+      color: var(--text-tertiary);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 1024px) {
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .header-inner {
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+
+      .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        gap: 0.75rem;
+        padding-top: 1rem;
+        border-top: 1px solid var(--border);
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .mobile-menu-btn {
+        display: block;
+      }
+
+      .search-bar {
+        order: 3;
+        width: 100%;
+      }
+
+      .search-bar input {
+        width: 100%;
+      }
+
+      .values-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .team-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      h1 { font-size: 1.9rem; }
+      h2 { font-size: 1.5rem; }
+      .about-hero h1 { font-size: 2rem; }
+      .about-hero .lead { font-size: 1rem; }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 0 1rem;
+      }
+
+      .header-inner {
+        padding: 0.75rem 1rem;
+      }
+
+      .about-content {
+        padding: 1.5rem 0 2.5rem;
+      }
+
+      .team-member {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+      }
+    }
+
+    /* ---------- UTILITY ---------- */
+    .hidden {
+      display: none !important;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="Form Matters home"> Inside Form<span>Matters</span></a>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">☰</button>
+
+      <nav aria-label="Main navigation">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="terms.html">Terms Of Privacy</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="cookies.html">Cookies Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="categories.html">Categories</a></li>
+        </ul>
+      </nav>
+
+      <div class="search-bar">
+        <span class="search-icon" aria-hidden="true">⌕</span>
+        <input type="search" id="searchInput" placeholder="Search articles…" aria-label="Search articles">
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== MAIN ========== -->
+  <div class="container">
+    <div class="about-content">
+
+      <!-- HERO -->
+      <section class="about-hero">
+        <span class="category-tag" style="margin-bottom:0.75rem;">About Us</span>
+        <h1>Form Matters</h1>
+        <p class="lead">An independent editorial publication dedicated to the thoughtful discussion of interior design, architecture, and the built environment. We believe good design is not about luxury—it's about clarity, function, and the quiet poetry of well-considered space.</p>
+      </section>
+
+      <!-- MISSION -->
+      <section class="about-section">
+        <h2>Our Mission</h2>
+        <p>Form Matters exists to bridge the gap between professional design discourse and the everyday reader. We publish long-form articles, practical guides, and critical perspectives that help people make better decisions about their own homes—and understand the forces shaping our cities.</p>
+        <p>In a media landscape saturated with fleeting trend reports and sponsored content, we remain committed to independent, researched, and beautifully written journalism. Every article is crafted with care, grounded in real expertise, and designed to be useful for years—not just news cycles.</p>
+        <p>We cover interior design, residential architecture, material innovation, lighting, space planning, and the intersection of design with sustainability and culture. Our writers are architects, designers, historians, and journalists who bring both practical knowledge and critical perspective to every piece.</p>
+      </section>
+
+      <!-- VALUES -->
+      <section class="about-section">
+        <h2>What We Value</h2>
+        <div class="values-grid">
+          <div class="value-card">
+            <span class="value-icon">◈</span>
+            <h3>Independence</h3>
+            <p>We are reader-supported and editorially independent. We do not accept sponsored posts, and our recommendations are never for sale.</p>
+          </div>
+          <div class="value-card">
+            <span class="value-icon">◈</span>
+            <h3>Depth over Speed</h3>
+            <p>We take time to research, interview, and fact-check. Our articles are built to last—not to chase algorithms.</p>
+          </div>
+          <div class="value-card">
+            <span class="value-icon">◈</span>
+            <h3>Practical Beauty</h3>
+            <p>We celebrate design that works: spaces that function, materials that age gracefully, and ideas that improve daily life.</p>
+          </div>
+          <div class="value-card">
+            <span class="value-icon">◈</span>
+            <h3>Accessibility</h3>
+            <p>Good design writing should be clear, jargon-free, and welcoming—whether you're a professional or a curious homeowner.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- TEAM -->
+      <section class="about-section">
+        <h2>Editorial Team</h2>
+        <p>Form Matters is produced by a small, dedicated team of writers and editors based across Europe and North America.</p>
+
+        <div class="team-grid">
+          <div class="team-member">
+            <div class="team-avatar">EM</div>
+            <div>
+              <h4>Elena Marchetti</h4>
+              <div class="role">Editor-in-Chief</div>
+              <p>Elena is an architect and writer based in Milan. She has spent fifteen years documenting residential design across Europe and Japan, with a particular focus on material culture and spatial calm.</p>
+            </div>
+          </div>
+
+          <div class="team-member">
+            <div class="team-avatar">JR</div>
+            <div>
+              <h4>James Reyes</h4>
+              <div class="role">Senior Editor, Architecture</div>
+              <p>James is a trained architect and former studio critic. He writes about adaptive reuse, sustainable building envelopes, and the evolving relationship between cities and their inhabitants.</p>
+            </div>
+          </div>
+
+          <div class="team-member">
+            <div class="team-avatar">SC</div>
+            <div>
+              <h4>Sofia Chen</h4>
+              <div class="role">Materials & Interiors Editor</div>
+              <p>Sofia is a designer and material researcher. She explores the stories behind the surfaces we live with—from lime plaster to reclaimed timber—and champions craft-based approaches.</p>
+            </div>
+          </div>
+
+          <div class="team-member">
+            <div class="team-avatar">MK</div>
+            <div>
+              <h4>Mira Kapoor</h4>
+              <div class="role">Contributing Writer, Lighting</div>
+              <p>Mira is a lighting designer and educator. Her work focuses on daylighting, human-centric lighting, and the role of light in shaping how we feel in interior spaces.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EDITORIAL STANDARDS -->
+      <section class="about-section">
+        <h2>Editorial Standards</h2>
+        <div class="editorial-standards">
+          <p>We hold ourselves to rigorous standards of accuracy, transparency, and integrity. Our editorial process includes:</p>
+          <ul>
+            <li><span class="check">✓</span> Independent research and expert review for every technical article.</li>
+            <li><span class="check">✓</span> Clear separation between editorial content and any commercial partnerships.</li>
+            <li><span class="check">✓</span> Full disclosure of sources, affiliations, and potential conflicts of interest.</li>
+            <li><span class="check">✓</span> A commitment to correcting errors promptly and transparently.</li>
+            <li><span class="check">✓</span> Respect for intellectual property and fair attribution of images and ideas.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- CONTACT / SUBMISSIONS -->
+      <section class="about-section" id="contact">
+        <h2>Contact & Submissions</h2>
+        <div class="contact-block">
+          <h3>We'd love to hear from you</h3>
+          <p>For editorial inquiries, article pitches, or feedback, please reach out to our editorial team. We welcome pitches for in-depth articles, case studies, and critical essays that align with our mission.</p>
+          <p><strong>Email:</strong> <a href="mailto:editorial@formmatters-journal.com">editorial@formmatters-journal.com</a></p>
+          <p style="margin-bottom:0;">We aim to respond to all serious inquiries within five working days. Please note that we do not accept unsolicited guest posts or sponsored content.</p>
+        </div>
+      </section>
+
+      <!-- ABOUT THE SITE -->
+      <section class="about-section" style="margin-bottom:0;">
+        <h2>About This Site</h2>
+        <p>Form Matters is published digitally and is designed to be readable on any device. We do not use tracking cookies, and we do not sell or share reader data. Our newsletter is sent monthly and you can unsubscribe at any time.</p>
+        <p style="font-size:0.85rem; color:var(--text-tertiary); margin-top:1.5rem;">© 2025 Form Matters Editorial. All rights reserved. Form Matters is an independent publication.</p>
+      </section>
+
+    </div>
+  </div>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>Form Matters</h3>
+          <p>An independent journal of interior design and architecture. We publish long-form articles, practical guides, and critical perspectives on the built environment.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="index.html">Interior Design</a></li>
+            <li><a href="index.html">Architecture</a></li>
+            <li><a href="index.html">Materials</a></li>
+            <li><a href="index.html">Lighting</a></li>
+            <li><a href="index.html">Small Spaces</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="about.html">Our Mission</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">Editorial Guidelines</a></li>
+            <li><a href="about.html">Contributors</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="cookies.html">Cookie Policy</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2025 Form Matters Editorial. All rights reserved.</span>
+        <span>Made with care for the built environment.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== JAVASCRIPT ========== -->
+  <script>
+    (function() {
+      'use strict';
+
+      // Mobile menu toggle
+      const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+      const navLinks = document.getElementById('navLinks');
+      if (mobileMenuBtn && navLinks) {
+        mobileMenuBtn.addEventListener('click', () => {
+          navLinks.classList.toggle('active');
+        });
+      }
+
+      // Search filtering (placeholder — redirects to home with search)
+      const searchInput = document.getElementById('searchInput');
+      if (searchInput) {
+        searchInput.addEventListener('keydown', function(e) {
+          if (e.key === 'Enter') {
+            e.preventDefault();
+            const query = this.value.trim();
+            if (query) {
+              window.location.href = 'index.html?search=' + encodeURIComponent(query);
+            }
+          }
+        });
+      }
+
+      // Smooth scroll for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          const href = this.getAttribute('href');
+          if (href === '#') return;
+          const target = document.querySelector(href);
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      });
+
+    })();
+  </script>
+
+</body>
+</html>

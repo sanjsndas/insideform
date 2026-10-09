@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Form Matters Journal</title>
+  <meta name="description" content="Privacy Policy for Form Matters Journal. Learn how we collect, use, and protect your personal information.">
+  <meta name="author" content="Form Matters Editorial">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.formmatters-journal.com/privacy.html">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Privacy Policy — Form Matters Journal">
+  <meta property="og:description" content="Read our privacy policy to understand how we handle your data.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.formmatters-journal.com/privacy.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&h=630&fit=crop&auto=format">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Privacy Policy",
+    "url": "https://www.formmatters-journal.com/privacy.html",
+    "description": "Privacy Policy for Form Matters Journal.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Form Matters Editorial",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.formmatters-journal.com/logo.png"
+      }
+    }
+  }
+  </script>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+  <style>
+    /* ---------- RESET & VARIABLES (same as index) ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg: #f9f8f6;
+      --surface: #ffffff;
+      --text-primary: #1e1e1e;
+      --text-secondary: #3f3f3f;
+      --text-tertiary: #6b6b6b;
+      --border: #e0ddd8;
+      --accent: #8b6b4d;
+      --accent-light: #f0ebe4;
+      --serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
+      --sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.04);
+      --shadow-md: 0 4px 12px rgba(0,0,0,0.05);
+      --radius: 4px;
+      --max-width: 1280px;
+      --content-width: 740px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text-primary);
+      font-family: var(--sans);
+      font-size: 1rem;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button, input, textarea, select {
+      font-family: inherit;
+      font-size: inherit;
+    }
+
+    /* ---------- TYPOGRAPHY ---------- */
+    h1, h2, h3, h4 {
+      font-family: var(--serif);
+      font-weight: 500;
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+    }
+
+    h2 {
+      font-size: 1.9rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h3 {
+      font-size: 1.35rem;
+      margin-bottom: 0.25rem;
+    }
+
+    h4 {
+      font-size: 1.15rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .meta {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-tertiary);
+      font-weight: 500;
+    }
+
+    .category-tag {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      background: var(--accent-light);
+      padding: 0.2rem 0.6rem;
+      border-radius: 2px;
+      margin-bottom: 0.5rem;
+    }
+
+    /* ---------- LAYOUT ---------- */
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .site-header {
+      border-bottom: 1px solid var(--border);
+      background: var(--surface);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 1.5rem;
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+
+    .logo {
+      font-family: var(--serif);
+      font-size: 1.6rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+    }
+
+    .logo span {
+      color: var(--accent);
+      font-style: italic;
+      font-weight: 400;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.75rem;
+      list-style: none;
+      font-size: 0.85rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .nav-links a {
+      color: var(--text-secondary);
+      transition: color 0.15s;
+    }
+
+    .nav-links a:hover {
+      color: var(--accent);
+    }
+
+    .search-bar {
+      display: flex;
+      align-items: center;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 0.4rem 0.75rem;
+      background: var(--bg);
+      transition: border-color 0.15s;
+    }
+
+    .search-bar:focus-within {
+      border-color: var(--accent);
+    }
+
+    .search-bar input {
+      border: none;
+      background: transparent;
+      outline: none;
+      font-size: 0.85rem;
+      width: 140px;
+      color: var(--text-primary);
+    }
+
+    .search-bar input::placeholder {
+      color: var(--text-tertiary);
+    }
+
+    .search-icon {
+      font-size: 0.9rem;
+      color: var(--text-tertiary);
+      margin-right: 0.4rem;
+    }
+
+    .mobile-menu-btn {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: var(--text-primary);
+    }
+
+    /* ---------- PRIVACY PAGE SPECIFIC ---------- */
+    .privacy-page {
+      padding: 3rem 0 4rem;
+    }
+
+    .privacy-header {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 3rem;
+    }
+
+    .privacy-header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .privacy-header p {
+      font-size: 1.1rem;
+      color: var(--text-secondary);
+      max-width: 550px;
+      margin: 0 auto;
+    }
+
+    .privacy-content {
+      max-width: var(--content-width);
+      margin: 0 auto;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 2.5rem 2rem;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .privacy-content h2 {
+      font-size: 1.6rem;
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .privacy-content h2:first-of-type {
+      margin-top: 0;
+    }
+
+    .privacy-content h3 {
+      font-family: var(--sans);
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: var(--text-primary);
+    }
+
+    .privacy-content p {
+      color: var(--text-secondary);
+      margin-bottom: 1rem;
+      font-size: 0.98rem;
+    }
+
+    .privacy-content ul {
+      margin-left: 1.5rem;
+      margin-bottom: 1.25rem;
+      color: var(--text-secondary);
+    }
+
+    .privacy-content li {
+      margin-bottom: 0.4rem;
+      font-size: 0.98rem;
+    }
+
+    .privacy-content a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    .privacy-content a:hover {
+      color: #7a5c40;
+    }
+
+    .privacy-content .last-updated {
+      font-size: 0.85rem;
+      color: var(--text-tertiary);
+      text-align: center;
+      margin-bottom: 1.5rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .privacy-content .highlight-box {
+      background: var(--accent-light);
+      border-left: 4px solid var(--accent);
+      padding: 1.25rem 1.5rem;
+      border-radius: 0 var(--radius) var(--radius) 0;
+      margin: 1.5rem 0;
+    }
+
+    .privacy-content .highlight-box p {
+      margin-bottom: 0;
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+    }
+
+    /* ---------- FOOTER (same as index) ---------- */
+    .site-footer {
+      border-top: 1px solid var(--border);
+      background: var(--surface);
+      padding: 3rem 0 2rem;
+      margin-top: 2rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 2.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .footer-brand h3 {
+      font-family: var(--serif);
+      font-size: 1.4rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .footer-brand p {
+      font-size: 0.85rem;
+      color: var(--text-tertiary);
+      line-height: 1.6;
+      max-width: 280px;
+    }
+
+    .footer-col h4 {
+      font-family: var(--sans);
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-tertiary);
+      margin-bottom: 1rem;
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col li {
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-col a {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      transition: color 0.15s;
+    }
+
+    .footer-col a:hover {
+      color: var(--accent);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid var(--border);
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.78rem;
+      color: var(--text-tertiary);
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .footer-bottom a {
+      color: var(--text-tertiary);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 1024px) {
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .header-inner {
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+
+      .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        gap: 0.75rem;
+        padding-top: 1rem;
+        border-top: 1px solid var(--border);
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .mobile-menu-btn {
+        display: block;
+      }
+
+      .search-bar {
+        order: 3;
+        width: 100%;
+      }
+
+      .search-bar input {
+        width: 100%;
+      }
+
+      .privacy-header h1 {
+        font-size: 2.2rem;
+      }
+
+      .privacy-content {
+        padding: 1.5rem;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 0 1rem;
+      }
+
+      .header-inner {
+        padding: 0.75rem 1rem;
+      }
+
+      .privacy-header h1 {
+        font-size: 1.9rem;
+      }
+
+      .privacy-content {
+        padding: 1.25rem;
+      }
+    }
+
+    .hidden {
+      display: none !important;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="Form Matters home"> Inside Form<span>Matters</span></a>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu">☰</button>
+
+      <nav aria-label="Main navigation">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="terms.html">Terms Of Privacy</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="cookies.html">Cookies Policy</a></li>
+          <li><a href="disclaimer.html">Disclaimer</a></li>
+          <li><a href="categories.html">Categories</a></li>
+        </ul>
+      </nav>
+
+      <div class="search-bar">
+        <span class="search-icon" aria-hidden="true">⌕</span>
+        <input type="search" id="searchInput" placeholder="Search articles…" aria-label="Search articles">
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== MAIN PRIVACY ========== -->
+  <div class="container">
+    <div class="privacy-page">
+
+      <!-- HEADER -->
+      <div class="privacy-header">
+        <span class="category-tag">Legal</span>
+        <h1>Privacy Policy</h1>
+        <p>Your privacy matters. This policy explains what information we collect, how we use it, and the choices you have.</p>
+      </div>
+
+      <!-- CONTENT -->
+      <div class="privacy-content">
+
+        <p class="last-updated"><strong>Last updated:</strong> 15 January 2025</p>
+
+        <p>Form Matters Editorial ("we", "our", "us") operates the website <a href="https://www.formmatters-journal.com">www.formmatters-journal.com</a> (the "Site"). This Privacy Policy describes how we collect, use, and share information when you visit or interact with the Site.</p>
+
+        <p>By using the Site, you agree to the collection and use of information in accordance with this policy. If you do not agree, please discontinue use of the Site.</p>
+
+        <h2>1. Information We Collect</h2>
+
+        <h3>Information you provide voluntarily</h3>
+        <p>We collect information that you voluntarily submit through our contact form, newsletter subscription, or email correspondence. This may include:</p>
+        <ul>
+          <li>Your name</li>
+          <li>Your email address</li>
+          <li>The subject and content of your message</li>
+          <li>Any other information you choose to share</li>
+        </ul>
+
+        <h3>Information collected automatically</h3>
+        <p>When you visit the Site, we may automatically collect certain information, including:</p>
+        <ul>
+          <li>IP address and approximate location (country/city level)</li>
+          <li>Browser type, device type, and operating system</li>
+          <li>Pages visited, time spent on pages, and referring URLs</li>
+          <li>Interactions with the Site (e.g., clicks, scroll depth)</li>
+        </ul>
+
+        <h3>Cookies and similar technologies</h3>
+        <p>We use cookies and similar tracking technologies to enhance your browsing experience and analyze Site traffic. For detailed information, please see our <a href="cookies.html">Cookies Policy</a>.</p>
+
+        <div class="highlight-box">
+          <p><strong>We do not sell, rent, or trade your personal information to third parties.</strong> We only share data as described in this policy or with your explicit consent.</p>
+        </div>
+
+        <h2>2. How We Use Your Information</h2>
+        <p>We use the information we collect for the following purposes:</p>
+        <ul>
+          <li><strong>Communication:</strong> To respond to your inquiries, feedback, or article pitches.</li>
+          <li><strong>Newsletter:</strong> To send you our monthly newsletter if you have subscribed (you can unsubscribe at any time).</li>
+          <li><strong>Site improvement:</strong> To understand how visitors use the Site and improve its content, layout, and functionality.</li>
+          <li><strong>Analytics:</strong> To monitor and analyze usage trends and preferences.</li>
+          <li><strong>Legal compliance:</strong> To comply with applicable laws and regulations.</li>
+        </ul>
+
+        <h2>3. Legal Basis for Processing (GDPR)</h2>
+        <p>If you are located in the European Economic Area (EEA), our legal basis for processing your personal data depends on the context:</p>
+        <ul>
+          <li><strong>Consent:</strong> When you subscribe to our newsletter or submit a contact form, you consent to us processing your data for that purpose.</li>
+          <li><strong>Legitimate interest:</strong> We may process data for analytics and Site improvement purposes, provided this does not override your rights and freedoms.</li>
+          <li><strong>Legal obligation:</strong> Where we are required to process data to comply with the law.</li>
+        </ul>
+
+        <h2>4. Data Retention</h2>
+        <p>We retain personal information only for as long as necessary to fulfill the purposes for which it was collected, or as required by law. Specifically:</p>
+        <ul>
+          <li><strong>Contact form submissions:</strong> Retained for up to 24 months to manage correspondence.</li>
+          <li><strong>Newsletter subscriptions:</strong> Retained until you unsubscribe, plus a short period thereafter for record-keeping.</li>
+          <li><strong>Analytics data:</strong> Retained in aggregated form and automatically deleted after 26 months.</li>
+        </ul>
+
+        <h2>5. Data Sharing and Disclosure</h2>
+        <p>We may share your information with the following categories of third parties:</p>
+        <ul>
+          <li><strong>Service providers:</strong> Trusted third parties who assist with website hosting, analytics, and newsletter delivery. These providers are contractually obligated to protect your data.</li>
+          <li><strong>Legal authorities:</strong> When required by law, court order, or governmental regulation.</li>
+          <li><strong>Business transfers:</strong> In the event of a merger, acquisition, or sale of assets, your data may be transferred as part of the transaction.</li>
+        </ul>
+
+        <h2>6. Your Rights</h2>
+        <p>Depending on your location, you may have the following rights regarding your personal data:</p>
+        <ul>
+          <li><strong>Access:</strong> Request a copy of the personal data we hold about you.</li>
+          <li><strong>Correction:</strong> Request that we correct inaccurate or incomplete data.</li>
+          <li><strong>Deletion:</strong> Request that we delete your personal data (the "right to be forgotten").</li>
+          <li><strong>Restriction:</strong> Request that we restrict processing of your data.</li>
+          <li><strong>Portability:</strong> Request that we transfer your data to another organization.</li>
+          <li><strong>Objection:</strong> Object to our processing of your data based on legitimate interests.</li>
+          <li><strong>Withdraw consent:</strong> Withdraw consent at any time where processing is based on consent.</li>
+        </ul>
+        <p>To exercise any of these rights, please contact us at <a href="mailto:privacy@formmatters-journal.com">privacy@formmatters-journal.com</a>. We will respond within 30 days.</p>
+
+        <h2>7. International Data Transfers</h2>
+        <p>Your information may be transferred to and processed in countries other than your own. We take appropriate safeguards to ensure that your data receives an adequate level of protection, including using Standard Contractual Clauses approved by the European Commission where applicable.</p>
+
+        <h2>8. Security</h2>
+        <p>We implement reasonable technical and organizational measures to protect your personal information from unauthorized access, alteration, disclosure, or destruction. These measures include encrypted transmission (HTTPS), access controls, and regular security reviews. However, no method of transmission over the Internet is 100% secure, and we cannot guarantee absolute security.</p>
+
+        <h2>9. Children's Privacy</h2>
+        <p>The Site is not directed to individuals under the age of 16. We do not knowingly collect personal information from children. If we become aware that we have inadvertently collected such information, we will take steps to delete it promptly.</p>
+
+        <h2>10. Third-Party Links</h2>
+        <p>The Site may contain links to third-party websites, including social media platforms and reference sources. We are not responsible for the privacy practices of these external sites. We encourage you to review their privacy policies before providing any personal information.</p>
+
+        <h2>11. Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy from time to time. We will notify you of any material changes by posting the new policy on this page and updating the "Last updated" date. We encourage you to review this page periodically.</p>
+
+        <h2>12. Contact Us</h2>
+        <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:</p>
+        <ul>
+          <li><strong>Email:</strong> <a href="mailto:privacy@formmatters-journal.com">privacy@formmatters-journal.com</a></li>
+          <li><strong>Postal address:</strong> Form Matters Editorial, Via Brera 12, 20121 Milan, Italy</li>
+        </ul>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <h3>Form Matters</h3>
+          <p>An independent journal of interior design and architecture. We publish long-form articles, practical guides, and critical perspectives on the built environment.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="#">Interior Design</a></li>
+            <li><a href="#">Architecture</a></li>
+            <li><a href="#">Materials</a></li>
+            <li><a href="#">Lighting</a></li>
+            <li><a href="#">Small Spaces</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>About</h4>
+          <ul>
+            <li><a href="about.html">Our Mission</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Editorial Guidelines</a></li>
+            <li><a href="#">Contributors</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="terms.html">Terms of Use</a></li>
+            <li><a href="cookies.html">Cookie Policy</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2025 Form Matters Editorial. All rights reserved.</span>
+        <span>Made with care for the built environment.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== JAVASCRIPT ========== -->
+  <script>
+    (function() {
+      'use strict';
+
+      // Mobile menu toggle
+      const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+      const navLinks = document.getElementById('navLinks');
+      if (mobileMenuBtn && navLinks) {
+        mobileMenuBtn.addEventListener('click', () => {
+          navLinks.classList.toggle('active');
+        });
+      }
+
+      // Search filtering (only on pages with article cards; harmless if none)
+      const searchInput = document.getElementById('searchInput');
+      const articles = document.querySelectorAll('.article-card');
+      if (searchInput && articles.length > 0) {
+        const noResults = document.getElementById('noResultsMessage');
+        const allArticles = Array.from(articles);
+
+        function filterArticles() {
+          const query = searchInput.value.trim().toLowerCase();
+          let visibleCount = 0;
+
+          allArticles.forEach(article => {
+            const title = article.getAttribute('data-title') || '';
+            const category = article.getAttribute('data-category') || '';
+            const cardText = article.textContent.toLowerCase();
+
+            const matches = query === '' || title.includes(query) || category.includes(query) || cardText.includes(query);
+
+            if (matches) {
+              article.classList.remove('hidden');
+              visibleCount++;
+            } else {
+              article.classList.add('hidden');
+            }
+          });
+
+          if (noResults) {
+            if (visibleCount === 0) {
+              noResults.classList.remove('hidden');
+            } else {
+              noResults.classList.add('hidden');
+            }
+          }
+        }
+
+        searchInput.addEventListener('input', filterArticles);
+
+        // Reset on clear
+        searchInput.addEventListener('search', function() {
+          if (this.value === '') {
+            allArticles.forEach(a => a.classList.remove('hidden'));
+            if (noResults) noResults.classList.add('hidden');
+          }
+        });
+      }
+
+      // Smooth scroll for internal anchors
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+          const href = this.getAttribute('href');
+          if (href === '#') return;
+          const target = document.querySelector(href);
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      });
+
+    })();
+  </script>
+
+</body>
+</html>
